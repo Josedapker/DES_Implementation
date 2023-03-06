@@ -1,6 +1,6 @@
-### Implementation of DES by Jose Jaramillo and Marco Rojas
+# Implementation of DES by Jose Jaramillo and Marco Rojas
 
-# Assignment 2: Modern Aspects of Cryptography (FAU)
+### Assignment 2: Modern Aspects of Cryptography (FAU)
 
 This is a Python app that implements the Data Encryption Standard (DES) algorithm, which is a symmetric-key block cipher used to encrypt and decrypt data. 
 
