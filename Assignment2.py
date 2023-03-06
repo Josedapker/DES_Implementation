@@ -345,9 +345,11 @@ def encrypt_text(pt, round_keys):
 
 # main function
 def main():
+    
 
-    plaintext = input("Enter the plaintext: ")
-    key = input("Enter the secret key: ")
+    print("DES Implementation App\nBy: Jose Jaramillo & Marco Rojas")
+    plaintext = input("Enter the plaintext: \n")
+    key = input("Enter the secret key: \n")
 
     padded_plaintext = pad_plaintext(plaintext)
     padded_key = pad_key(key)
@@ -363,10 +365,11 @@ def main():
 
     # Join the binary codes together into a single string
     binary_plaintext_string = "".join(binary_plaintext)
+    #print("Binary Plaintext:", binary_plaintext_string)
     binary_key_string = "".join(binary_key)
 
-    print("Padded Plaintext: ", padded_plaintext)
-    print("Padded Key: ",padded_key)
+    #print("Padded Plaintext:", padded_plaintext)
+    #print("Padded Key:",padded_key)
  
     # Calling the function to generate 16 keys
     generate_keys(binary_key_string)
@@ -375,27 +378,42 @@ def main():
     ciphertext = encrypt_text(binary_plaintext_string, round_keys)
     print("Cipher text:   ", ciphertext)
 
-    # Reversing the round_keys array for decryption
-    i = 15
-    j = 0
-    while i > j:
-        temp = round_keys[i]
-        round_keys[i] = round_keys[j]
-        round_keys[j] = temp
-        i -= 1
-        j += 1
+    # Python script to ask user if they want to decrypt ciphertext
+    while True:
+    # Prompt user to enter yes or no answer
+        answer = input("Do you want to decrypt your ciphertext? (yes or no): ")
 
-    plaintext = ciphertext
-    decrypted = encrypt_text(plaintext, round_keys)
-    print("Decrypted text:", decrypted)
+        # Check if answer is yes or no
+        if answer.lower() == "yes":
+        
+                # Reversing the round_keys array for decryption
+            i = 15
+            j = 0
+            while i > j:
+                temp = round_keys[i]
+                round_keys[i] = round_keys[j]
+                round_keys[j] = temp
+                i -= 1
+                j += 1
 
-    # Comparing the initial plain text with the decrypted text
-    if decrypted == binary_plaintext_string:
-        print("Plain text encrypted and decrypted successfully. :-)")
-    else:
-        print("Plain text encrypted and decrypted unsuccessfully :-(")
-        print("Original: ", binary_plaintext_string)
-        print("Decrypted:", decrypted)
+            plaintext = ciphertext
+            decrypted = encrypt_text(plaintext, round_keys)
+            print("Decrypted text:", decrypted)
+            print("Binary Plaintext: ", binary_plaintext_string)
 
+            # Comparing the initial plain text with the decrypted text
+            if decrypted == binary_plaintext_string:
+                print("Plain text encrypted and decrypted successfully. :-)")
+            else:
+                print("Plain text encrypted and decrypted unsuccessfully :-(")
+            break
+
+        elif answer.lower() == "no":
+            # Code to exit the program goes here
+            print("Exiting program...")
+            break
+        else:
+            # Handle invalid input
+            print("Invalid input. Please enter 'yes' or 'no'.")
 
 main()
