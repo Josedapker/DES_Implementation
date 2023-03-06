@@ -25,3 +25,13 @@ The pad_key() function takes the key and pads it with the same padding character
 
 The encrypt_text() function takes the padded plaintext and the round keys, and encrypts the plaintext using DES. It does this by chunking the plaintext into 64-bit blocks and encrypting each block using the encrypt() function, which is not included in this code snippet. The encrypted blocks are concatenated together to form the final encrypted text. The encrypted blocks are concatenated together to form the final encrypted text.
 
+The convertDecimalToBinary(decimal) function takes in a decimal number and converts it into a 4-bit binary string. It does this by repeatedly dividing the decimal number by 2, and appending a "1" to the binary string if the remainder is 1, and a "0" otherwise. The resulting binary string is then left-padded with zeros until it is 4 bits long.
+
+The convertBinaryToDecimal(binary) function takes in a binary string and converts it into a decimal number. It does this by iterating over each bit of the binary string, starting from the rightmost bit. If the bit is "1", it adds 2 to the power of the current bit position to the decimal number. The resulting decimal number is returned.
+
+The Xor(a, b) function takes in two binary strings of equal length and performs an XOR operation between them. It does this by iterating over each bit of the strings and appending a "1" to the result string if the bits at that position are different, and a "0" otherwise.
+
+The shift_left_once(key_chunk) function takes in a binary string of length 28 and performs a circular left shift by 1. It does this by taking the first bit of the string and moving it to the end, while shifting all other bits one position to the left.
+
+The shift_left_twice(key_chunk) function takes in a binary string of length 28 and performs a circular left shift by 2. It does this by performing the shift_left_once function twice.
+
