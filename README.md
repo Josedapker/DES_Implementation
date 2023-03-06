@@ -11,7 +11,6 @@ This is a Python implementation of the Data Encryption Standard (DES) algorithm,
 4. Run "Assignment2.py"
 
 # Example
-Example.jpg in the images repo
 ![Alt text](/images/Example.jpg "Example encryption and decryption")
 
 
