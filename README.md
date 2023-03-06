@@ -11,7 +11,7 @@ This is a Python implementation of the Data Encryption Standard (DES) algorithm,
 4. Run "Assignment2.py"
 
 # Example
-Example.jpg in the example repo
+Example.jpg in the images repo
 
 
 # Functions
