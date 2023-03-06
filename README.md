@@ -12,6 +12,7 @@ This is a Python implementation of the Data Encryption Standard (DES) algorithm,
 
 # Example
 Example.jpg in the images repo
+![Alt text](/images/Example.jpg "Example encryption and decryption")
 
 
 # Functions
