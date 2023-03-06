@@ -384,7 +384,7 @@ def main():
 
     while True:
     # Prompt user to enter yes or no answer
-        answer = input("Do you want to decrypt your Cipher text? (yes or no): ")
+        answer = input("Would you like to decrypt your cipher text? (yes or no): ")
 
         # Check if answer is yes or no
         if answer.lower() == "yes":
