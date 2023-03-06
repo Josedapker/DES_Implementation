@@ -351,8 +351,8 @@ def main():
     plaintext = input("Please enter the plaintext you would like to encrypt: \n")
     key = input("Please enter the secret key: \n")
 
-    while len(key) >= 8:
-        print("The key should be less than 8 characters. Please try again.")
+    while len(key) >= 9:
+        print("The key should be less than 9 characters. Please try again.")
         key = input("Please enter the secret key: \n")
 
     padded_plaintext = pad_plaintext(plaintext)
