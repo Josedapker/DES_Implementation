@@ -1,8 +1,15 @@
-# Implementation of DES by Jose Jaramillo and Marco Rojas
+# Implementation of DES by Jose Jaramillo & Marco Rojas
 
 ### Assignment 2: Modern Aspects of Cryptography (FAU)
 
 This is a Python app that implements the Data Encryption Standard (DES) algorithm, which is a symmetric-key block cipher used to encrypt and decrypt data. 
+
+#Example
+
+![Alt text](/Users/jose/CryptographyAssignment2 "Example")
+
+
+
 
 # Functions
 
@@ -16,4 +23,3 @@ The pad_key() function takes the key and pads it with the same padding character
 
 The encrypt_text() function takes the padded plaintext and the round keys, and encrypts the plaintext using DES. It does this by chunking the plaintext into 64-bit blocks and encrypting each block using the encrypt() function, which is not included in this code snippet. The encrypted blocks are concatenated together to form the final encrypted text. The encrypted blocks are concatenated together to form the final encrypted text.
 
-To set up this code, one would need to have Python installed on their system. They would then need to copy the code into a Python file, save the file, and run it. The code asks for user input of the encryption key and plain text to be encrypted.
