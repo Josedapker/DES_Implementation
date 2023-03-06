@@ -4,9 +4,17 @@
 
 This is a Python app that implements the Data Encryption Standard (DES) algorithm, which is a symmetric-key block cipher used to encrypt and decrypt data. 
 
+
+## How to set up
+1. Clone this project
+2. 
+
+
+
+
 #Example
 
-![Alt text](/Users/jose/CryptographyAssignment2/Example.jpg "Example")
+![Alt text](/Users/jose/CryptographyAssignment2/Example "Example")
 
 
 
