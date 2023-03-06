@@ -8,7 +8,7 @@ This is a Python implementation of the Data Encryption Standard (DES) algorithm,
 1. Clone this project
 2. Open this project in desired IDE
 3. Make sure you have Python and appropriated packages installed
-4. Run
+4. Run "Assignment2.py"
 
 # Example
 Example.js in the repo
