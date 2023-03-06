@@ -6,7 +6,7 @@ This is a Python app that implements the Data Encryption Standard (DES) algorith
 
 #Example
 
-![Alt text](/Users/jose/CryptographyAssignment2 "Example")
+![Alt text](/Users/jose/CryptographyAssignment2/Example.jpg "Example")
 
 
 
